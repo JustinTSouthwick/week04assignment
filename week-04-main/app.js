@@ -125,6 +125,7 @@ console.log(`Finding the average number of numbers array: ${avgArray2}`);
 
 //Question 11: Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
+//I used two prior arrays in this assignment for this function.
 function avgIsGreater() {
     if(avgArray1 > avgArray2) {
         return true;
@@ -147,15 +148,16 @@ function willBuyDrink(warm, cash) {
 
 console.log(`Checking if it's hot enough and we have enough money to buy a drink: ${willBuyDrink(true, 15.00)}`);
 
-//Create a function of your own that solves a problem.   In comments, write what the function does and why you created it.
+//Question 13: Create a function of your own that solves a problem.   In comments, write what the function does and why you created it.
 
-function canHelpFriend(time, extraTime, totalTime) {
-    if(time + extraTime <= totalTime) {
+//I wrote this function to check if I had the time to help a friend before an event. I took the time it'd take and added travel time, then checked it against total available time I had.
+function canHelpFriend(time, travelTime, totalTime) {
+    if(time + travelTime <= totalTime) {
         return true;
     } else {
         return false;
     }
 };
 
-console.log(`Do I have enough time to help my friend with his pc? ${canHelpFriend(60, 30, 120)}`);
+console.log(`Do I have enough time to help my friend with his pc? ${canHelpFriend(60, 30, 100)}`);
 
