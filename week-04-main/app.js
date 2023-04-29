@@ -33,7 +33,7 @@ console.log(`The average number of the ages array is: ${avgArray1}`);
 
 const names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob'];
 
-console.log(`Names array her: ${names}`);
+console.log(`Names array here: ${names}`);
 
 //used for loop to calculate the average number of letters per word in names array.
 let count = 0;
@@ -101,7 +101,8 @@ function isGreaterThan100() {
     let sum = 0;
     for(let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
-    } if(sum > 100) {
+    } 
+    if(sum > 100) {
         return true;
     } else {
         return false;
